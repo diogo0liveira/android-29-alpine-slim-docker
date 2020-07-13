@@ -4,7 +4,9 @@ LABEL maintainer="Diogo Oliveira <diogo0liveira@hotmail.com>"
 RUN apk add --no-cache \
 	bash \
 	unzip && \
+	apk add ca-certificates && \
 	apk add --virtual .rundeps $runDeps && \
+	update-ca-certificates && \
 	rm -rf /tmp/* && \
 	rm -rf /var/cache/apk/*
 
