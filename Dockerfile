@@ -23,6 +23,6 @@ RUN wget -q https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 RUN yes | \
 	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager "--licenses" && \
 	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager --verbose "platforms;android-29" && \
-	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager --verbose "build-tools;29.0.3" && \
+	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager --verbose "build-tools;30.0.1" && \
 	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager --verbose "platform-tools" && \ 
 	${ANDROID_SDK_ROOT}/tools/bin/sdkmanager --verbose "--update"
